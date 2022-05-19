@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Nunito:wght@200&family=Overpass:ital,wght@1,100&family=Roboto:wght@500&display=swap');
+
+body {
+  font-family: 'Montserrat';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sign-up-heading {
+  margin-top: 63px;
+
+  font-weight: 800;
+  font-size: 68.2235px;
+  line-height: 83px;
+
+  color: #5b5b5b;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sign-up-title {
+  font-weight: 700;
+  font-size: 32.2673px;
+  line-height: 39px;
+
+  color: #5b5b5b;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.sign-up-description {
+  margin-top: 79px;
+  font-weight: 400;
+  font-size: 40.1225px;
+  line-height: 49px;
+
+  color: #5b5b5b;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.sign-up-date-time {
+  margin-top: 77px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23.7691px;
+  line-height: 28px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  color: #121117;
 }
