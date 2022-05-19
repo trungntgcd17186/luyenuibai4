@@ -1,7 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Nunito:wght@200&family=Overpass:ital,wght@1,100&family=Roboto:wght@500&display=swap');
 
-body {
+* {
   font-family: 'Montserrat';
+}
+
+.main-container {
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+
+.sign-up-background-icon {
+  position: absolute;
+  bottom: 2%;
+  right: -2%;
+  opacity: 0.5;
+}
+
+.sign-up-background-bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .sign-up-heading {
@@ -23,6 +42,7 @@ body {
 }
 
 .sign-up-description {
+  width: 70%;
   margin-top: 79px;
   font-weight: 400;
   font-size: 40.1225px;
@@ -40,4 +60,154 @@ body {
   line-height: 28px;
 
   color: #121117;
+}
+
+.form-sign-up-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.input-container > Input {
+  width: 75%;
+  height: 66px;
+
+  background: #fcfcfc;
+  border: 1px solid #929292;
+  box-shadow: inset 1px 1px 20px rgba(75, 76, 77, 0.1);
+  border-radius: 50px;
+
+  padding-left: 38px;
+  font-weight: 600;
+  font-size: 23.7691px;
+  line-height: 29px;
+
+  color: #5e5e5e;
+}
+
+.sign-up-btn-container {
+  margin-top: 22px;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.sign-up-btn-container > Button {
+  width: 75%;
+  height: 66px;
+
+  background: #5b5b5b;
+  border: 1px solid #929292;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16);
+  border-radius: 50px;
+
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 23.7691px;
+  line-height: 29px;
+}
+
+.sign-up-share-contact {
+  margin-top: 28px;
+
+  font-weight: 600;
+  font-size: 23.7691px;
+  line-height: 29px;
+  color: #5e5e5e;
+}
+
+.sign-up-contact-icon-container {
+  margin-top: 15px;
+  width: 35%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.sign-up-banner-mobile {
+  display: none;
+  position: absolute;
+}
+
+@media only screen and (max-width: 414px) {
+  .sign-up-banner-image {
+    display: none;
+  }
+
+  .sign-up-background-bottom-right {
+    display: none;
+  }
+
+  .sign-up-background-icon {
+    top: 8%;
+    right: 2%;
+    opacity: 1;
+  }
+
+  .sign-up-heading {
+    margin-top: 15px;
+    font-size: 34.6945px;
+    line-height: 42px;
+    width: 90%;
+  }
+
+  .sign-up-title {
+    font-size: 18.9445px;
+    line-height: 23px;
+    width: 90%;
+  }
+
+  .sign-up-banner-mobile {
+    display: block;
+    top: 13%;
+    left: 17%;
+  }
+
+  .sign-up-description {
+    margin-top: 415px;
+    width: 85%;
+    height: 67px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #5b5b5b;
+  }
+
+  .sign-up-date-time {
+    margin-top: 5px;
+    font-size: 18.487px;
+    line-height: 22px;
+  }
+
+  .input-container > Input {
+    width: 85%;
+    height: 51.33px;
+    font-size: 18.487px;
+    line-height: 23px;
+  }
+
+  .sign-up-btn-container {
+    margin-top: 27px;
+  }
+
+  .sign-up-btn-container > Button {
+    width: 85%;
+    height: 51.33px;
+    font-size: 18.487px;
+    line-height: 23px;
+  }
+
+  .sign-up-contact-icon-container {
+    width: 55%;
+  }
 }
