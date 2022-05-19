@@ -5,15 +5,17 @@
 }
 
 .main-container {
-  display: flex;
   height: 100vh;
-  position: relative;
+  display: flex;
+  background-image: url(./assets/images/BackgroundImage.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .sign-up-background-icon {
   position: absolute;
   bottom: 2%;
-  right: -2%;
+  right: 0;
   opacity: 0.5;
 }
 
@@ -137,7 +139,39 @@
   position: absolute;
 }
 
+.sign-up-background-mobile {
+  display: none;
+}
+
+.form-sign-up-heading-container,
+.form-sign-up-content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media only screen and (max-width: 414px) {
+  .main-container {
+    flex-direction: column;
+    padding-left: 10px;
+    background-image: url(./assets/images/BackgroundMobile.svg);
+    background-size: 90%;
+    background-position: 50% 15%;
+  }
+
+  .form-sign-up-container {
+    height: 100vh;
+    justify-content: space-between;
+    padding-bottom: 35px;
+  }
+
+  .form-sign-up-heading-container {
+    align-items: flex-start;
+    width: 100%;
+
+    margin-left: 20px;
+  }
+
   .sign-up-banner-image {
     display: none;
   }
@@ -147,22 +181,26 @@
   }
 
   .sign-up-background-icon {
+    display: none;
+  }
+
+  .sign-up-background-mobile {
+    display: block;
+    position: absolute;
     top: 8%;
-    right: 2%;
-    opacity: 1;
+    right: 4%;
+    width: 90%;
   }
 
   .sign-up-heading {
     margin-top: 15px;
     font-size: 34.6945px;
     line-height: 42px;
-    width: 90%;
   }
 
   .sign-up-title {
     font-size: 18.9445px;
     line-height: 23px;
-    width: 90%;
   }
 
   .sign-up-banner-mobile {
@@ -172,7 +210,6 @@
   }
 
   .sign-up-description {
-    margin-top: 415px;
     width: 85%;
     height: 67px;
 
