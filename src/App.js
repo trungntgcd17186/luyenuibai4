@@ -16,8 +16,8 @@ function App() {
     <Row>
       <Col xs={24} sm={24} md={24} lg={24} xl={24} xxl={24}>
         <div className='main-container'>
-          <Col xs={0} sm={13} xl={13} />
-          <Col xs={24} sm={11} xl={11}>
+          <Col xs={0} sm={0} xl={13} />
+          <Col xs={24} sm={24} xl={11}>
             <div className='form-sign-up-container'>
               <div className='form-sign-up-heading-container'>
                 <div className='sign-up-heading'>Enter To Win</div>
